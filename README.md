@@ -48,6 +48,19 @@ To improve the experiment further, additional sign-data could be generated using
 <br>
 <br>
 
+Before beginning our modeling and analysis, we'll briefly discuss how convolutional neural networks allow us to train computers to identify objects. As humans, when we look at a picture, like the example below, we see a cute dog with black and grey fur. Without thought, we know that the subject of the image isn't a horse, car, or cat. 
+![img](/IMG_6417.jpg)
+
+Even when viewing an example of a heavily edited photo I took, as humans we still have no difficulty in identifying that the subject of the image is a dog, even though he is blue. Take a look:
+![img](/IMG_1469)
+
+Computers, unsurprisingly, have no notion of what a dog is, much less what one looks like. Instead, computers see images as grouped matrices called tensors. In each matrix, each number corresponds to a specific pixel in the image. Put simply, an image with the dimensions of 32x32x3 contains 3 matrices (representing the Red, Green, and Blue color channels) that are 32 pixels in height, and 32 pixels in width.
+
+Using a convolutional neural network, we are able to train models to extract image "features" such as edges, shapes, and colors. Using supervised learning techniques, we can pass thousands of images of dogs of all breeds through a model in order to "teach the computer" what a dog looks like. So, while a computer may not appreciate how cute my dog Oliver is, by applying different filters to his portrait, it can determine that Oliver's facial structure, color, and shape share similarities with other dogs.
+![gif](Oliver.gif)
+
+In the links below, we'll explore these techniques discussed here, and create models that classify street signs into 43 target classes.
+
 Notebooks/Links of Interest:**
-- [Modeling](/Modeling.ipynb)
-- Keynote (PDF) - **LINK WILL GO HERE**
+- [Modeling](/traffic_signs_modeling.ipynb)
+- [Image pre-processing](/image_preprocessing.ipynb)
