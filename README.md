@@ -52,7 +52,7 @@ Before beginning our modeling and analysis, we'll briefly discuss how convolutio
 ![img](/IMG_6417.jpg)
 
 Even when viewing an example of a heavily edited photo I took, as humans we still have no difficulty in identifying that the subject of the image is a dog, even though he is blue. Take a look:
-![img](/IMG_1469)
+![img](/IMG_1469.jpg)
 
 Computers, unsurprisingly, have no notion of what a dog is, much less what one looks like. Instead, computers see images as grouped matrices called tensors. In each matrix, each number corresponds to a specific pixel in the image. Put simply, an image with the dimensions of 32x32x3 contains 3 matrices (representing the Red, Green, and Blue color channels) that are 32 pixels in height, and 32 pixels in width.
 
